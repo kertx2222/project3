@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — JapaaanTrip</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.css">
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar is-danger has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong class="is-size-4">JapaaanTrip</strong>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">Главная</a>
+                    <a href="faq.html" class="navbar-item">FAQ</a>
+                    <a href="contacts.html" class="navbar-item is-active">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ui container segment" style="margin-top: 5em;">
+
+        <div class="ui grid">
+            <div class="row">
+                <div class="column eight wide">
+                    <h2 class="ui header">Напишите нам</h2>
+                    <form class="ui form">
+                        <div class="field">
+                            <label>Имя</label>
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="field">
+                            <label>Email</label>
+                            <input type="email" placeholder="example@mail.ru" required>
+                        </div>
+                        <div class="field">
+                            <label>Тема</label>
+                            <select class="ui dropdown">
+                                <option value="">Выберите тему</option>
+                                <option value="support">Техподдержка</option>
+                                <option value="payment">Оплата из РФ</option>
+                                <option value="partner">Партнерство</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Сообщение</label>
+                            <textarea rows="3"></textarea>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden" required>
+                                <label>Согласие на обработку данных</label>
+                            </div>
+                        </div>
+                        <button class="ui primary button" type="submit">Отправить</button>
+                    </form>
+                </div>
+
+                <div class="column eight wide">
+                    <div class="ui raised segment">
+                        <h3 class="ui header">Контакты</h3>
+                        <div class="ui list">
+                            <div class="item">
+                                <i class="map marker icon"></i>
+                                <div class="content">Россия, Москва, проспект Вернадского, 78, стр. 4</div>
+                            </div>
+                            <div class="item">
+                                <i class="phone icon"></i>
+                                <div class="content">+7 (999) 228-13-37</div>
+                            </div>
+                            <div class="item">
+                                <i class="mail icon"></i>
+                                <div class="content">support@japaaantrip.ru</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment" style="padding: 0; overflow: hidden; margin-top: 1em;">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A72d8bee7f0289dc81d96fcae74d0c059fc6349eea0fcbc43dd7abeaed946c646&amp;source=constructor"
+                            width="500" height="400" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>JapaaanTrip</strong> by Dashiev Maxim.
+                Планируй с умом и точка.
+            </p>
+            <p>
+                <a href="contacts.html" class="button is-small is-outlined">Связаться с нами</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

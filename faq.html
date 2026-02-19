@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — JapaaanTrip</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.css">
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar is-danger has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong class="is-size-4">JapaaanTrip</strong>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">Главная</a>
+                    <a href="faq.html" class="navbar-item is-active">FAQ</a>
+                    <a href="contacts.html" class="navbar-item">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pusher">
+        <div class="ui container" style="margin-top: 6em;">
+            <h1 class="ui centered header">Часто задаваемые вопросы</h1>
+            <div class="ui styled accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Как оплатить сервис картой РФ?
+                </div>
+                <div class="content">
+                    <p class="transition hidden">Мы интегрировали платежные шлюзы, принимающие карты российских банков
+                        через партнеров.</p>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Работает ли приложение без интернета?
+                </div>
+                <div class="content">
+                    <p class="transition hidden">Да, функция "Офлайн симулятор" позволяет скачать весь маршрут и QR-коды
+                        билетов.</p>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    Чем вы лучше Google Maps?
+                </div>
+                <div class="content">
+                    <p class="transition hidden">Google Maps показывает только дорогу. Мы строим полноценный маршрут с
+                        бронированием.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.ui.accordion').accordion();
+        });
+    </script>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>JapaaanTrip</strong> by Dashiev Maxim.
+                Проект основан на анализе конкурентов (Klook, Rakuten, Jalan.net).
+            </p>
+            <p>
+                <a href="contacts.html" class="button is-small is-outlined">Связаться с нами</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
