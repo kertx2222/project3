@@ -43,32 +43,37 @@
             <div class="row">
                 <div class="column eight wide">
                     <h2 class="ui header">Напишите нам</h2>
-                    <form class="ui form">
+                    <form id="feedbackForm" class="ui form">
                         <div class="field">
-                            <label>Имя</label>
-                            <input type="text" placeholder="Ваше имя" required>
+                            <label>Имя <span style="color: red;">*</span></label>
+                            <input type="text" id="fullname" placeholder="Иванов Иван" required>
                         </div>
                         <div class="field">
-                            <label>Email</label>
-                            <input type="email" placeholder="example@mail.ru" required>
+                            <label>Email <span style="color: red;">*</span></label>
+                            <input type="email" id="email" placeholder="example@mail.ru" required>
                         </div>
                         <div class="field">
                             <label>Тема</label>
-                            <select class="ui dropdown">
+                            <select class="ui dropdown" id="topic">
                                 <option value="">Выберите тему</option>
                                 <option value="support">Техподдержка</option>
                                 <option value="payment">Оплата из РФ</option>
                                 <option value="partner">Партнерство</option>
+                                <option value="other">Другое</option>
                             </select>
                         </div>
                         <div class="field">
                             <label>Сообщение</label>
-                            <textarea rows="3"></textarea>
+                            <textarea id="message" rows="3" placeholder="Ваш вопрос..."></textarea>
+                        </div>
+                        <div class="field">
+                            <label>Телефон <span style="color: red;">*</span></label>
+                            <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
                         </div>
                         <div class="field">
                             <div class="ui checkbox">
-                                <input type="checkbox" tabindex="0" class="hidden" required>
-                                <label>Согласие на обработку данных</label>
+                                <input type="checkbox" id="agreement" required>
+                                <label>Согласие на обработку данных <span style="color: red;">*</span></label>
                             </div>
                         </div>
                         <button class="ui primary button" type="submit">Отправить</button>
@@ -115,6 +120,19 @@
         </div>
     </footer>
 
-</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js"></script>
+
+<script src="scripts/validation.js"></script>
+<script src="scripts/consoleLogger.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.ui.dropdown').dropdown();
+        $('.ui.checkbox').checkbox();
+    });
+</script>
+
+</body>
 </html>
